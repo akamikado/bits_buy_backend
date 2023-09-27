@@ -8,8 +8,14 @@ Spring boot is the choice of framework and MongoDB is choice of database in this
 
 
 MONGO_DB_DATABASE= Database name
+
+
 MONDO_DB_USER = Database User
+
+
 MONGO_DB_PASSWORD= User Password
+
+
 MONGO_DB_CLUSTER=Cluster (in the format cluster_name.xxxxxxx.mongodb.net)
 
 ## Frontend
