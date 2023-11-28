@@ -1,4 +1,4 @@
-package mysqlaccess;
+package com.oops_i_did_it_again.bitsbuy_backend.mysqlaccess;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

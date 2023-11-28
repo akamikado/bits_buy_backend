@@ -1,14 +1,17 @@
-package Profile;
+package com.oops_i_did_it_again.bitsbuy_backend.Profile;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.oops_i_did_it_again.bitsbuy_backend.Profile.ProfileRequest;
+import com.oops_i_did_it_again.bitsbuy_backend.Profile.UpdateUserProfile;
+import com.oops_i_did_it_again.bitsbuy_backend.mysqlaccess.Users;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import Profile.UpdateUserProfile;
-import mysqlaccess.Users;
+
 import net.minidev.json.JSONObject;
 
 @RestController
@@ -35,15 +38,5 @@ public class ProfileCheckController {
     }
 }
 
-class ProfileRequest{
-    private String email;
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-}
 
