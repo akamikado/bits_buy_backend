@@ -1,4 +1,4 @@
-package Home;
+package com.oops_i_did_it_again.bitsbuy_backend.Home;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import mysqlaccess.Products;
-import Home.HomeQuery;
+import com.oops_i_did_it_again.bitsbuy_backend.mysqlaccess.Products;
+import com.oops_i_did_it_again.bitsbuy_backend.Home.HomeQuery;
 import net.minidev.json.JSONObject;
-import Home.ProductDTO;
+import com.oops_i_did_it_again.bitsbuy_backend.Home.ProductDTO;
 
 @RestController
 public class HomeController {

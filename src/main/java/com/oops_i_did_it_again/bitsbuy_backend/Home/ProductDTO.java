@@ -1,4 +1,4 @@
-package Home;
+package com.oops_i_did_it_again.bitsbuy_backend.Home;
 
 public class ProductDTO {
     private String name;
