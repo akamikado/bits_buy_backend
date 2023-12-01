@@ -1,5 +1,7 @@
 package com.oops_i_did_it_again.bitsbuy_backend.Profile;
 
+
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

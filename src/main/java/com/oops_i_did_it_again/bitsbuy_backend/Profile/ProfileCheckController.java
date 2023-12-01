@@ -27,6 +27,7 @@ public class ProfileCheckController {
         JSONObject response = new JSONObject();
         if(!userDetails.isEmpty()){
             if(!userDetails.get(0).getName().isEmpty() && userDetails.get(0).getMobileNo()!= null && !userDetails.get(0).getHostel().isEmpty()){
+
                 response.put("profileCompleted", true);
             }
             response.put("profileCompleted", false);

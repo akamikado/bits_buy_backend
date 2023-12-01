@@ -28,6 +28,7 @@ public class ProfileRequest{
 
     public void setPhonenum(Integer mobileNo) {
         this.mobileNo = mobileNo;
+
     }
 
     public void setEmail(String email) {
@@ -37,4 +38,5 @@ public class ProfileRequest{
     public void setHostel(String hostel) {
         this.hostel = hostel;
     }
+
 }
