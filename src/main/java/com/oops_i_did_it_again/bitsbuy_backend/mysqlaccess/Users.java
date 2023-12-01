@@ -14,7 +14,7 @@ public class Users {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
   @Column(name = "user_id")
-  private Integer id;
+  private Integer user_id;
 
   @Column(name = "name")
   private String name;
@@ -26,12 +26,14 @@ public class Users {
   @Column(name = "mobile_no")
   private Integer mobile_no;
 
-  public Integer getId() {
-    return id;
-  }
+  @Column(name = "hostel")
+  private String hostel;
 
-  public void setId(Integer id) {
-    this.id = id;
+  public Integer getId() {
+    return user_id;
+  }
+  public void setId(Integer user_id) {
+    this.user_id = user_id;
   }
 
   public String getName() {
@@ -56,5 +58,13 @@ public class Users {
 
   public void setMobileNo(Integer mobile_no) {
     this.mobile_no = mobile_no;
+  }
+
+  public String getHostel() {
+    return hostel;
+  }
+
+  public void setHostel(String hostel){
+    this.hostel = hostel;
   }
 }

@@ -19,7 +19,7 @@ public class ProfileUpdateController {
     @PostMapping("/profile/update")
     @ResponseBody
     public String Update(@RequestBody ProfileRequest profileRequest) {
-        updateUserProfile.updatingNameMobileNo(profileRequest.getEmail(),profileRequest.getName(), profileRequest.getPhonenum());
+        updateUserProfile.updatingNameMobileNo(profileRequest.getEmail(),profileRequest.getName(), profileRequest.getPhonenum(), profileRequest.getHostel());
         return "Saved";
     }
 }

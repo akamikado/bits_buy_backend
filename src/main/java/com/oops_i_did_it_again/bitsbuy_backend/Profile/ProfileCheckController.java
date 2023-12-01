@@ -26,7 +26,8 @@ public class ProfileCheckController {
         List<Users> userDetails = updateUserProfile.checkEmail(profileRequest.getEmail());
         JSONObject response = new JSONObject();
         if(!userDetails.isEmpty()){
-            if(!userDetails.get(0).getName().isEmpty() && userDetails.get(0).getMobileNo()!= null){
+            if(!userDetails.get(0).getName().isEmpty() && userDetails.get(0).getMobileNo()!= null && !userDetails.get(0).getHostel().isEmpty()){
+
                 response.put("profileCompleted", true);
             }
             response.put("profileCompleted", false);

@@ -1,5 +1,6 @@
 package com.oops_i_did_it_again.bitsbuy_backend.Profile;
 
+
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -13,15 +14,13 @@ import java.util.*;
 // CRUD refers Create, Read, Update, Delete
 
 public interface UpdateUserProfile extends CrudRepository<Users, Integer> {
-    
-    @Modifying
-    @Query(value = "UPDATE users SET name=:name, mobile_no=:mobile_no WHERE email=:email;", nativeQuery = true)
-    void updatingNameMobileNo(@Param("email") String email,@Param("name") String name,@Param("mobile_no") Integer mobile_no);
 
-    @Query(value = "SELECT u FROM Users u WHERE u.email = :email")
+    @Query("UPDATE users SET name=:name, mobile_no=:moobile_no, hostel=:hostel WHERE email=:email;")
+    Users updatingNameMobileNo(@Param("email") String email,@Param("name") String name,@Param("mobile_no") Integer mobile_no,@Param("hostel") String hostel);
+
+    @Query("SELECT * FROM users WHERE email=:email;")
     List<Users> checkEmail(@Param("email") String email);
 
-    @Modifying
-    @Query(value = "INSERT INTO users (email) VALUES (:email);", nativeQuery = true)
-    void createUser (@Param("email") String email);
+    @Query("INSERT INTO users (email) VALUES (:email);")
+    Users createUser (@Param("email") String email);
 }
