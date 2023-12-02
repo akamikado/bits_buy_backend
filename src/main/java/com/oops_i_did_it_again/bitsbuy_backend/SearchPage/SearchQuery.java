@@ -10,6 +10,7 @@ import com.oops_i_did_it_again.bitsbuy_backend.mysqlaccess.Users;
 import java.util.*;
 
 public interface SearchQuery extends CrudRepository<Products, Integer> {
-    @Query("SELECT * FROM products WHERE product_name LIKE '%:productName%' OR product_category LIKE '%:productName%';")
+    @Query("SELECT p FROM Products p WHERE p.product_name LIKE %:productName% OR p.product_category LIKE %:productName%")
     List<Products> selectProducts(@Param("productName") String productName);
+
 }
