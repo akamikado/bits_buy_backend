@@ -21,7 +21,7 @@ public class HomeController {
 
     @GetMapping("/home")
     @ResponseBody
-    public JSONObject Home(@RequestParam("pageNumber") int pageNumber){
+    public JSONObject Home(){
        List<Products> productDetails = homeQuery.selectProducts();
 
         // Convert the list of Products to a list of ProductDTO
