@@ -28,6 +28,9 @@ public class Products {
     @Column(name = "product_description")
     private String product_description;
 
+    @Column(name = "image")
+    private String image;
+
     @Column(name = "owner_id")
     @NotNull
     private Integer owner_id;
@@ -76,6 +79,13 @@ public class Products {
     }
     public void setProductDescription(String product_description) {
         this.product_description = product_description;
+    }
+
+    public String getImage() {
+        return image;
+    }
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public Integer getOwnerId() {
