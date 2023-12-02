@@ -8,7 +8,7 @@ import com.oops_i_did_it_again.bitsbuy_backend.mysqlaccess.Products;
 import java.util.*;
 
 public interface HomeQuery extends CrudRepository<Products, Integer> {
-    @Query("SELECT * FROM products")
+    @Query("SELECT p FROM Products p")
     List<Products> selectProducts();
 }
 
