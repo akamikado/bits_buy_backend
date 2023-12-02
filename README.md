@@ -1,5 +1,10 @@
 # Backend for BITS Buy
 
+## Group Members
+[Mahima](https://github.com/mahimahi18)
+[Srichandra](https://github.com/srichandra707)
+[Divya](https://github.com/1-Daisy-8)
+
 ## Description  
 
 This is the backend for the CS F213 project.   
